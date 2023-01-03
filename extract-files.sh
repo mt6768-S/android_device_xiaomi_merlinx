@@ -15,6 +15,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "$PATCHELF" --add-needed "libutinterface_md.so" "$2"
             ;;
+	vendor/lib64/libmi_watermark.so)
+            [ "$2" = "" ] && return 0
+            "$PATCHELF" --add-needed "libpiex_shim.so" "$2"
+            ;;
     esac
 }
 
