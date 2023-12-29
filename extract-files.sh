@@ -8,6 +8,9 @@
 
 function blob_fixup() {
     case "${1}" in
+	vendor/bin/mnld)
+            "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
+            ;;
         vendor/lib64/libmi_watermark.so)
             [ "$2" = "" ] && return 0
             "$PATCHELF" --add-needed "libpiex_shim.so" "$2"
