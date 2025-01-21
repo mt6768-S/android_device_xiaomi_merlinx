@@ -49,7 +49,7 @@ PRODUCT_PACKAGES += \
     SettingsProviderOverlayMerlinx \
     SystemUIOverlayMerlinx
 
-# Rootdir
+# Init
 PRODUCT_PACKAGES += \
     init.project.rc
 
