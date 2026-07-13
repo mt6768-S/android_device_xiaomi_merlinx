@@ -23,6 +23,9 @@ PRODUCT_MODEL := Redmi Note 9
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="merlin-user 12 SP1A.210812.016 V13.0.2.0.SJOMIXM release-keys"
-
-BUILD_FINGERPRINT := Redmi/merlin/merlin:12/SP1A.210812.016/V13.0.2.0.SJOMIXM:user/release-keys
+    BuildDesc="merlin-user 12 SP1A.210812.016 V13.0.2.0.SJOMIXM release-keys" \
+    BuildFingerprint=Redmi/merlin/merlin:12/SP1A.210812.016/V13.0.2.0.SJOMIXM:user/release-keys \
+    SystemModel=$(PRODUCT_SYSTEM_DEVICE) \
+    SystemName=$(PRODUCT_SYSTEM_NAME) \
+    ProductModel=$(PRODUCT_SYSTEM_DEVICE) \
+    DeviceProduct=$(PRODUCT_SYSTEM_NAME)
