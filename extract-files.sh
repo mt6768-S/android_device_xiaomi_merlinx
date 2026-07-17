@@ -11,6 +11,10 @@ function blob_fixup() {
         vendor/bin/mnld)
             "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
             ;;
+	vendor/lib*/libutinterface_custom_md.so)
+            [ "$2" = "" ] && return 0
+            "$PATCHELF" --add-needed "libutinterface_md.so" "$2"
+            ;;
     esac
 }
 

@@ -208,12 +208,12 @@ vendor/firmware/novatek_ts_g6_mp.bin
 # Radio
 vendor/etc/init/init.md_apps.rc
 vendor/lib/libcarrierconfig.so
-vendor/lib/libutinterface_custom_md.so
+vendor/lib/libutinterface_custom_md.so;DISABLE_DEPS
 vendor/lib64/libcarrierconfig.so
 vendor/lib64/libmtk-ril.so
 vendor/lib64/libmtkrilutils.so
 vendor/lib64/librilfusion.so
-vendor/lib64/libutinterface_custom_md.so
+vendor/lib64/libutinterface_custom_md.so;DISABLE_DEPS
 
 # NFC
 vendor/etc/libnfc-nci.conf
