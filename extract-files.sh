@@ -12,6 +12,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "$PATCHELF" --add-needed "libpiex_shim.so" "$2"
             ;;
+        vendor/lib*/libutinterface_custom_md.so)
+            [ "$2" = "" ] && return 0
+            "$PATCHELF" --add-needed "libutinterface_md.so" "$2"
+            ;;
         *)
             return 1
             ;;
@@ -31,6 +35,7 @@ if [ "${BASH_SOURCE[0]}" != "${0}" ]; then
 fi
 
 set -e
+
 
 export DEVICE=merlinx
 export DEVICE_COMMON=mt6768-common
