@@ -27,7 +27,7 @@ PRODUCT_SYSTEM_DEVICE := merlin
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="merlin-user 12 SP1A.210812.016 V13.0.2.0.SJOMIXM release-keys" \
-    BuildFingerprint=Redmi/merlin/merlin:12/SP1A.210812.016/V13.0.2.0.SJOMIXM:user/release-keys \
+    BuildFingerprint=Redmi/merlin_global/merlin:12/SP1A.210812.016/V13.0.2.0.SJOMIXM:user/release-keys \
     SystemModel=$(PRODUCT_SYSTEM_DEVICE) \
     SystemName=$(PRODUCT_SYSTEM_NAME) \
     ProductModel=$(PRODUCT_SYSTEM_DEVICE) \
