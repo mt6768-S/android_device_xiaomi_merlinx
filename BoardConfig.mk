@@ -22,7 +22,7 @@ ODM_MANIFEST_SKUS += \
 ODM_MANIFEST_MERLINNFC_FILES := $(DEVICE_PATH)/manifest_merlinnfc.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := merlin_defconfig
+TARGET_KERNEL_CONFIG += vendor/merlin.config
 
 # Inherit the proprietary files
 include vendor/xiaomi/merlinx/BoardConfigVendor.mk
