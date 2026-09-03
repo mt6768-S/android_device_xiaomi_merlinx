@@ -299,6 +299,7 @@ vendor/bin/factory_bin
 vendor/bin/initprop_bin
 vendor/bin/meta_tst
 vendor/bin/mnld
+vendor/lib64/libDR.so
 
 # Misc
 vendor/lib64/lib_misd.so
