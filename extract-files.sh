@@ -16,6 +16,9 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "$PATCHELF" --add-needed "libutinterface_md.so" "$2"
             ;;
+	vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so)
+            "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
+            ;;
         *)
             return 1
             ;;
