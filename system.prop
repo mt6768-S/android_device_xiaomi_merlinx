@@ -1,0 +1,6 @@
+#Infinity Flags
+ro.product.marketname=Xiaomi Redmi Note 9
+ro.infinity.soc=Mediatek Helio G85
+ro.infinity.battery=5020 mAh
+ro.infinity.display=1080 x 2340, 60 Hz
+ro.infinity.camera=48MP+8MP+2MP+2MP
