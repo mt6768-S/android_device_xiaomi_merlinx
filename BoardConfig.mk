@@ -24,5 +24,8 @@ ODM_MANIFEST_MERLINNFC_FILES := $(DEVICE_PATH)/manifest_merlinnfc.xml
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/merlin.config
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # Inherit the proprietary files
 include vendor/xiaomi/merlinx/BoardConfigVendor.mk
